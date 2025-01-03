@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>why knot ehhehehe</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="\main.css" />
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+	</head>
+    <style>
+        model-viewer {
+            width: 100%; height: 400px; top: 0px;  position: sticky;
+        }
+    </style>
+
+	<body>
+
+	<ul class="main">
+		<li class = "main"><a href="\index.html" class="active"><b>Home</b></a></li>
+        <li><a href="./art.html" ><b>Back</b></a></li>
+	</ul>
+
+    <section>
+        <h2>
+            Siefert surface for Trefoil knot
+        </h2>
+    </section>
+    
+    <section>
+        <model-viewer src="./3dmodels/seifert_torus_savee.glb" alt = "Seifert surface for qTrefoil knot" camera-controls auto-rotate>
+        </model-viewer>
+    </section>
+    <section>
+
+        <img style="width: min(50% , 400px); float: right;" src="./art_images/trefoil.jpg">
+
+        <p>
+            What is a <a href="https://en.wikipedia.org/wiki/Seifert_surface" target="_blank">Seifert surface</a>? Very loosly, a Serifert surace is a two sided surface whos 
+            boundary is a knot. You may think of this surface as the result of taking a wire frame of a knot and dipping it into some soapy water and taking it out.
+            The result will be a surface like this. 
+        </p>
+        <p>
+            This particular surface is a surface for the <a href="https://en.wikipedia.org/wiki/Trefoil_knot" target="_blank">trefoil knot</a> obtained
+            by the construction stated in Seifert's algorithm, outlined 
+            in <a href="https://web.goodnotes.com/s/cKzAuL19Em0jNBTlUShUIQ#page-21" target="_blank">my notes</a>. 
+            Also fun picture of trefoil knot to the right! or below!
+        </p>
+
+
+        <p>
+            And why did I make this? you ask? well.. I kind of looks sick, plus the mathematics it enables is of a certain quality I wont get into here.
+        </p>
+
+        <p>
+            Stuff to download: <a href="./3dmodels/seifert_torus_savee.glb" download>seifert_torus_savee.glb</a>
+        </p>
+
+	</section>
+
+    
+
+
+	<footer>
+        18/03/24<br>
+        Created by Patryk Drozd <br>
+    </footer>
+
+
+	</body>
+
+</html>

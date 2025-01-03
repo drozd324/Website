@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>"machine noises"</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="\main.css" />
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+	</head>
+    
+	<body>
+        
+        <ul class="main">
+            <li class = "main"><a href="\index.html" class="active"><b>Home</b> </a></li>
+            <li><a href="./coding.html"><b>Back</b></a></li>
+        </ul>
+        
+        <section>
+            <h2>
+                Accelerating Cosmological Simulation with Machine learning
+            </h2>
+            <p>
+                This 10 week project was done with guidance from <a href="https://www.maynoothuniversity.ie/people/john-brennan">Dr John Brennan</a>, as part of the 
+                <a href="https://www.maynoothuniversity.ie/study-maynooth/undergraduate-studies/news/spur-2023-dept-theoretical-physics">SPUR</a> programm in with the 
+                <a href="https://www.maynoothuniversity.ie/theoretical-physics">Department of Theoretical Physics</a> in
+                <a href="https://www.maynoothuniversity.ie/">Maynooth University</a>.
+            </p>
+
+            <p>
+                The core idea of this project was to apply machine learning methods found in image processing and apply them to solve a problem 
+                in cosmological simulations. The key insight was that data in images is stored in same way as is data in cosmological simualtions, so
+                in principle you could rip out some cool methods developed in these image processing papers and stick your own data in there.
+                Below is a poster I made as did everyone else engaged in the programme. 
+                Code on <a href="https://github.com/MaynoothBlackHoles/SubGridMachineLearning_SPUR2023" target="_blank">github</a>.
+            </p>
+
+            <p>
+                <embed src="./coding_images/DrozdP-Theoretical_Physics-2023.pdf" type="application/pdf" width="100%" height="600px" />
+            </p>
+            <p>
+                Sometimes it the embeded pdf doesnt load so here is a <a href="./coding_images/DrozdP-Theoretical_Physics-2023.pdf">link</a> that should work.
+            </p>
+
+            <p>
+                In the 10 weeks I had to work on this project, I spent the first 3 learning about the intricacies and fundamentals of machine learning
+                and working with simple models made in pytorch (a python library for machine learning stuff) to classify hand drawn digits. I have to point out an exellent 
+                <a href="http://neuralnetworksanddeeplearning.com/index.html" target="_blank">"book"</a> hosted on a website which I found was just very well written 
+                and gave me a basis from which to build on. I recommend even just reading the first chapter if to get a grasp on machine learning and ideas behind it 
+                even if you have no intention of actually working on building stuff with it. 
+            </p>
+            <p>
+                After the 3 weeks I actually started working on making some stuff to potentailly aid these cosmological simulations. I worked on two ideas, mainly because
+                halfway through the first one we noticed that the second one was far superior. So the first bit was to train a neural network on randomly generated data, as 
+                opposed to data taken from running a simulation, with the aim of bypassing the time to create real trainig data and get the same results. This has potentail 
+                to significantly decrease the time it would take to create a neural network.       
+            </p>    
+            <p>
+                Ultimately, the final part of this project was essentially making high resolution data from low resolution data. Now, I didnt get as far as
+                I would have liked with this but at this point I got pleanty out of this project. I have a comically marginal increase in preformance compared to 
+                a basine stupid simple method, but I can technically say that I got an improved result, however small it is. 
+            </p>
+            <p>
+                Below I'll link some cool papers I had the chance to read while developing this projcet.
+
+                <ul class="sub">
+                    <li>
+                        Predicting Localized Primordial Star Formation with Deep Convolutional Neural Networks  
+                        <ul class="sub">
+                            <li>
+                                <a href="https://arxiv.org/abs/2011.01358 target="_blank"">https://arxiv.org/abs/2011.01358</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Image Super-Resolution Using Deep Convolutional Networks
+                        <ul class="sub">
+                            <li>
+                                <a href="https://arxiv.org/abs/1501.00092 target="_blank"">https://arxiv.org/abs/1501.00092</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Accurate Image Super-Resolution Using Very Deep Convolutional Networks
+                        <ul class="sub">
+                            <li>
+                                <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Kim_Accurate_Image_Super-Resolution_CVPR_2016_paper.pdf" target="_blank">https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Kim_Accurate_Image_Super-Resolution_CVPR_2016_paper.pdf</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Super-resolution reconstruction of turbulent flows with machine learning
+                        <ul class="sub">
+                            <li>
+                                <a href="https://arxiv.org/abs/1811.11328" target="_blank">https://arxiv.org/abs/1811.11328</a> <--- This one is very cool
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    
+                </ul>
+
+            </p>
+
+            </section>
+
+    <footer>
+        06/09/2023<br>
+        Created by Patryk Drozd <br>
+    </footer>
+
+
+	</body>
+
+</html>

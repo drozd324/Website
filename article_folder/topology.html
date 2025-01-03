@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>whipidy woo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="\main.css" />
+
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              },
+              svg: {
+                fontCache: 'global'
+              }
+            };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
+        <style>
+            #ch1,#ch2,#ch3{
+            height: 100%;
+            width: 100%;
+            }           
+        </style>
+
+	</head>
+    
+	<body>
+        
+        <ul class="main">
+            <li class = "main"><a href="\index.html" class="active"><b>Home</b> </a></li>
+            <li><a href="./articles.html"><b>Back</b></a></li>
+        </ul>
+
+    <section>
+        <h3>
+            <u>Definition</u>
+        </h3>
+        A topology on a set $X$ is a subset $\mathcal{T} \subseteq P(X)$ of the power set which satisfies the following conditions.
+        $$\text{(1) } \emptyset, X \in \mathcal{T}$$
+        Arbitrary unions of elements in $\mathcal{T}$ are in $\mathcal{T}$
+        $$\text{(2) For any } S \subseteq \mathcal{T}, \,\,\,\,  \bigcup_{s \in S} s \in \mathcal{T}$$
+        Finite intersections of elements in $\mathcal{T}$ are in $\mathcal{T}$ 
+        $$\text{(3) For any } S \subseteq \mathcal{T}, \,\,\,\,
+        \vert S \vert < \infty , \,\,\,\,
+        \bigcup_{s \in S} s \in \mathcal{T}$$
+        
+        <h3>
+            <u>Example</u>
+        </h3>
+        (1) $\underline{\text{The trivial topology}}$
+        $$\mathcal{T}_{trivial} = \{\emptyset, X\} $$
+        (2) $\underline{\text{A topology on } \mathbb{R}}$ <br>
+        <h1></h1>
+        Let $X = \mathbb{R}$ and consider the collection of sets consisting of arbitrary unions of open intervals,
+        $$\mathcal{T} = \{(a, b) \, \vert \, a,b \in \mathbb{R}, \, a <  b \}$$
+        is the standard topology on $\mathbb{R}$
+        <h1></h1>
+        (3) $\underline{\text{A topology with } n \in \mathbb{N} \text{ elements}}$
+        Let $n \in \mathbb{N}$ , $\mathcal{T}_0 = \emptyset$ then
+        $$\mathcal{T}_n := \bigcup_{i < n} \{ \mathcal{T_i}\} \hspace{1cm} 
+        \text{ where } i \in \mathbb{N} \, \cup \, \{0\}, \hspace{.3cm}
+        \text{is a topology on } \mathcal{T}_{n-1} \text{ with } n \text{ elements}$$
+        is a topology on $\mathcal{T}_{n-1}$ with $n$ elements. This is a topology I had to construct on a problem set I had. I though this one is particularly cool since it resembles the creation of the natural numbers out of empty sets by repeatedly nesting empty sets within empty sets in a creative way. To see this consider the first few topologies this recursive definition creates, say for n=1,2,3. 
+        $$\mathcal{T}_1 = \{ \emptyset \} \hspace{1cm} \text{a topology on } \mathcal{T}_0$$
+        $$\mathcal{T}_2 = \{ \{ \emptyset \}, \emptyset \}
+        = \{\mathcal{T}_1, \, \emptyset \}
+        \hspace{1cm} \text{a topology on } \mathcal{T}_1$$
+        $$\mathcal{T}_3 = \{ \,  \{  \{ \emptyset \} \, , \emptyset \} , \, \{ \emptyset \}, \, \emptyset \}
+        = \{ \mathcal{T}_2, \, \mathcal{T}_1, \, \emptyset \}
+        \hspace{1cm} \text{a topology on } \mathcal{T}_2$$
+        Here you can essentially associate each $\mathcal{T}_i$ with a natural number $i$. 
+    </section>
+        
+    <footer>
+            ??/??/2023<br>
+        Created by Patryk Drozd <br>
+    </footer>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>TPnM machine</title> 
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./main.css" /> 
+	</head>
+
+    <style>
+        body {
+          font-family: Arial;
+          margin: 0;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        img {
+          vertical-align: middle;
+        }
+        
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+          position: relative;
+        }
+        
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+          object-fit: contain;
+        }
+        
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+        
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Six columns side by side */
+        .column {
+          float: left;
+        }
+        
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+    </style>
+
+    
+    <body>
+      
+      <ul class="main">
+        <li class = "main"><a href="./index.html" class="active"><b>Home</b> </a></li>
+        <li><a href="./index.html"><b>Back</b> </a></li>
+      </ul>
+      
+      <section>
+        Some <a href="/past_notes.html">past notes</a>
+      </section>
+      
+    <section>
+        <p>
+            The machine is complete. It was a turbulent but delightful 3 years :) . I'm glad to have spent it with you all!
+        </p>
+
+        <!--<ul>
+          <li><a href="https://share.goodnotes.com/s/FbL210iMdojw2BSHdZhPn9">Quantum Infomation Processing - Notes</a></li>
+          <li><a href="https://share.goodnotes.com/s/QJ9QBeZhwbcHsLs2VMLDzX">Quantum Infomation Processing - Tutorials</a></li>
+          <li><a href="https://share.goodnotes.com/s/PoXL4NkUzGJ9ZeoJRh0JrP">Advanced Electromagnetism</a></li>
+          <li><a href="https://share.goodnotes.com/s/rSOs3tMADDsioOdxUNWE6t">Point set Topology - Notes</a></li>
+          <li><a href="https://share.goodnotes.com/s/TvIX3SBxyrHesK579fgdty">Point set Topology - Tutorials</a></li>
+          <li><a href="https://share.goodnotes.com/s/bvNAf1FvJXpGrVAQSuIbxv">Number Theory - Notes</a></li>
+          <li><a href="https://share.goodnotes.com/s/BhKRZCJkGY9UpnSZiRVaUi">Number Theory - Tutorials</a></li>
+        </ul>
+        
+        <p>
+          Downloads
+        </p>
+      -->
+
+        
+      <!--
+        <p>
+          Funny modules im doing which I want to have easy acess to
+        </p>
+        
+        <ul>
+          <li><a href="https://share.goodnotes.com/s/cKzAuL19Em0jNBTlUShUIQ">Knot Theory</a></li>
+          <li><a href="https://share.goodnotes.com/s/IaOTZILN7ymDBc0Stz8fHV">Fluid Sim</a></li>
+        </ul>
+      -->  
+
+    </section>  
+
+    <!--<section style="text-align: center; width: auto;">
+      <a href="https://www.instagram.com/roddie4academicaffairs/?next=%2F"><img src="./images/vote_roddie.png" style="width: 75%;" ></a>
+    </section>
+
+    <section style="text-align: center;">
+      <h1>
+        <a href="http://www.msu.ie/vote">VOTE GODDIE</a>
+      </h1>
+    </section>-->  
+
+
+    <section>
+    <div class="container">
+
+        <div class="mySlides">
+          <img src="/memes/meme1.jpg" class="center">
+        </div>
+        
+        <div class="mySlides">
+          <img src="/memes/meme2.jpg" class="center">
+        </div>
+        
+        <div class="mySlides">
+          <img src="/memes/meme4.jpg" class="center">
+        </div>
+        
+        <div class="mySlides">
+          <img src="/memes/meme5.jpg" class="center">
+        </div>
+    
+        <div class="mySlides">
+          <img src="/memes/meme6.jpg" class="center">
+        </div>
+        
+        <div class="mySlides">
+          <img src="/memes/meme8.jpg" class="center">
+        </div>
+        
+        <div class="mySlides">
+          <img src="/memes/meme10.jpg" class="center">
+        </div>
+        
+        <div class="mySlides">
+          <img src="/memes/meme11.jpg" class="center">
+        </div>
+        
+        <div class="mySlides">
+          <img src="/memes/meme12.png" class="center">
+        </div>
+      
+        
+        <div class="mySlides">
+          <img src="https://i.redd.it/o9mtahzlq47c1.jpeg" class="center">
+        </div>
+        
+        <div class="mySlides">
+          <img src="https://i.redd.it/69aoxa7qpf171.jpg" class="center">
+        </div>
+      
+        <div class="mySlides">
+        <img src="https://i.redd.it/ft7x85dsg48c1.jpeg" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/o9vlc2ts13u51.png" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/g1ackm6hqypb1.png" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/elyynbl5o5961.jpg" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/uhaxbrjo1ka61.png" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/w2xe7vpjcj691.png" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/rxgs3s7vl8d91.png" class="center">
+      </div>
+      
+      
+      
+      <div class="mySlides">
+        <img src="https://preview.redd.it/72rk543t64t31.jpg?width=640&crop=smart&auto=webp&s=c773b1acbccb3a1ec92c8b763e6ec61c80e37b66" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://preview.redd.it/cmxg5vjgr5571.jpg?width=960&crop=smart&auto=webp&s=b49297f86c514558edb04e55faa456eb7ed9855f" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://preview.redd.it/wvfkeewncrja1.jpg?width=640&crop=smart&auto=webp&s=f56ecb9222e76f984d53039af96fc2c8d398db4e" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/pmxr1uaojxs41.jpg" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/ye72sfq5zsu51.png" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/i6sa0pua9t551.png" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/etbxd3h36t1b1.png" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="/memes/meme1.jpg" class="center">
+        </div>
+      
+      <div class="mySlides">
+        <img src="/memes/aidan_meme1.jpg" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="/memes/aidan_meme2.png" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="/memes/aidan_meme3.png" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="/memes/aidan_meme4.jpg" class="center">
+      </div>
+      
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/o6tkprs3zc1d1.jpeg" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/58u3t0ejxs0d1.jpeg" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/2e206w90ww0d1.jpeg" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/7h919m1cfz0d1.jpeg" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="https://i.redd.it/769w0j01u51d1.jpeg" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="/memes/meme11.jpg" class="center">
+      </div>
+
+      <div class="mySlides">
+        <img src="/memes/meme6.jpg" class="center">
+      </div>
+
+      <div class="mySlides">
+        <img src="/memes/meme1.jpg" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <img src="/memes/4_horse_conor.jpg" class="center">
+      </div>
+      
+      <div class="mySlides">
+        <div style="background: #f2f2f2; color: black; text-align: center">
+        <img src="/memes/taylor_expanded_idiot.jpg" class="center">
+          <p>
+            <b>Get Taylor Expanded Idiot</b>
+          </p>
+          </div>
+      </div>
+      
+    </div>  
+
+    </div>
+    
+  </section>
+  
+  <script>
+    let slideIndex = Math.floor((Math.random() * 40) + 1);
+    showSlides(slideIndex);
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    
+  <section>
+    <p>Some memes provided by or yoinked .. or feature in haha, 
+      <a href="https://www.youtube.com/watch?v=V9O94UTDAJQ">Aidan</a>,
+      <a href="https://www.youtube.com/watch?v=3JVGNUbWibg">Conor</a>,
+      <a href="">Jack</a>,
+    </p>
+  </section>
+
+
+	<footer>
+        28/05/2024<br>
+    </footer>
+	
+	</body>
+
+</html>

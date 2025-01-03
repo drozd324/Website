@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>whipidy woo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="\main.css" />
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+        <style>
+            #ch1,#ch2,#ch3{
+            height: 100%;
+            width: 100%;
+            }           
+        </style>
+
+	</head>
+    
+	<body>
+        
+        <ul class="main">
+            <li class = "main"><a href="\index.html" class="active"><b>Home</b> </a></li>
+            <li><a href="./articles.html"><b>Back</b></a></li>
+        </ul>
+
+    <section>
+        Over the summer I had some spare time where I decided to try to read a bit about some <a href="https://en.wikipedia.org/wiki/Knot_theory">Knot Theory</a> after
+        being reminded of a vague interest in it a good while ago when I watched a <a href="https://www.youtube.com/watch?v=8DBhTXM_Br4&t=17s">Veritasium video</a>, very good
+        video I highly recommend. I picked up a book called <a title="Sadly I couldnt find any links a pdf of this book, do share if you find one">'On Knots' by Louis H Kaufmann</a>
+        and browsed it quite freely. I didn't read it all but I got what I wanted from it, a good understanding of what knot theory is, and it's pretty cool. To elaborate a 
+        bit more, this book didn't go into this topic whith the highest rigor but got the qualatative nauture of the topic accross. 
+        Here I hope to highlight some of the bits that I thought were quite interesting.
+    </section>
+
+    <section>
+        <h3>Contents</h3>
+        <ul>
+            <li>
+                <a href="#ch1">Why study knots?</a>
+            </li>
+            <li>
+                <a href="#ch2">Small Collection of knots</a>
+            </li>
+            <li>
+                <a href="#ch3">Moving knots around</a>
+            </li>
+        </ul>
+        
+
+    </section>
+
+    <section >
+        <h1 id="ch1"><a style="pointer-events: none; " href="ch1">Why study knots?</a></h1>
+        <p>
+            So why on earth would we want to study knots?! Well, if you dont mind me offloading some work from 
+            here go watch <a href="https://www.youtube.com/watch?v=8DBhTXM_Br4&t=17s">that video</a> I mentioned earlier. However I can highlight some 
+            of the motivation I had to read about knots and their theories.
+        </p>
+
+        <p>
+            Let's start with trying to draw some knots, but lets think about it for a second. Our first attempt of a knot on a page 
+            might be some tight, scrambled looking mess with a start and end of our rope, far from our knot.
+        </p>
+        
+        <section style="text-align: center; width: auto;">
+            <img style="width: min(100% , 730px);" src="./knot_diagrams/bad_knot1.jpg">
+        </section>
+        
+        <p>
+            Lets try to expand them to highlight some detail in their turns and folds.
+        </p>
+
+        <section style="text-align: center; width: auto;">
+            <img style="width: min(100% , 730px);" src="./knot_diagrams/bad_knot2.jpg">
+        </section>
+        
+        <p>
+            Now we have something more appealing, with some symmetry perhaps, though not very symmetric to any other part, but smooth in shape.
+            Still our rope looks kind of bad. We think of a rope in 3 dimensions after all so lets add some "dimensionality" to our rope by 
+            removing bits of line as our rope goes under and over itself. You may think of the solid line as a bit of rope passing over another, while 
+            the slighlty erased line may imply the rope passing below the other.
+        </p>
+        
+        <section style="text-align: center; width: auto;">
+            <img style="width: min(100% , 730px);" src="./knot_diagrams/bad_knot3.jpg">
+        </section>
+
+
+        
+        <p>
+            If we would like to keep moving about little sections of this rope, we could move the start and end of our rope or string and 
+            untie the knot, rather sad, because we want to keep these knots in our structure we created. So we join start and end together to kind of 
+            "seal" this knot within our rope.
+        </p>
+        
+        <section style="text-align: center; width: auto;">
+            <img style="width: min(100% , 730px);" src="./knot_diagrams/bad_knot4.jpg">
+        </section>
+        
+        <p>
+            And so we end up with what is known as a "knot diagram". Pretty cool eh? Reviewing this paragraph I realised I didn't provide
+            much motivation for where you may start to think about knots in the first place, but in the end I find the continiuity and symmetry 
+            of these knots rather interesting and fun to look at, trying to decipher what kind of knot it is or what it may look like. Then again 
+            classification of knots is THE problem in knot theory so, the more you know.
+        </p>
+
+    </section>
+
+    <section>
+        <h1 id="ch2"><a style="pointer-events: none;" href="ch2">Small collecton of knots</a></h1>
+
+        <p>
+            The following is a little collection of prime knots.
+        </p>
+
+        <p>
+            First some simple ones
+        </p>
+
+        <section style="text-align: center; width: auto;">
+            <img style="width: min(100% , 330px); text-align: center;" src="./knot_diagrams/unknot.jpg">
+            <img style="width: min(100% , 330px);" src="./knot_diagrams/trefoil.jpg">
+            <img style="width: min(100% , 330px);" src="./knot_diagrams/figure8knot.jpg">
+        </section>
+
+        <p>
+            Slighlty more complex ones with 9 crossings. I put these in here as an example of how for knots 
+            with a higher amount of crossings you need to get a bit more creative one how to show the bloody knot.
+            So many twists and turns.
+        </p>
+        
+        <section style="text-align: center; width: auto;">
+            <img style="width: min(100% , 830px);" src="./knot_diagrams/9crossingsknot.jpg">
+        </section>
+
+        <!--
+            unknot, trefoil, some crazy looking thing
+        -->
+
+    </section>
+
+    <section>
+        <h1 id="ch3"><a style="pointer-events: none; " href="ch3">Moving knots around</a></h1>
+
+        <p>
+            We are mathematicians here after all so, what rules do we have for moving these mathematical knots around? There is a set of 
+            operations called the Reidermeister Moves, which represent the ways you can arrange real knots. These allow us to call
+            different knot diagrams I illustrate them below. Try convincing yourself that you could preform these on a real physical knot.
+        </p>
+
+        <p>
+            <b>(1)</b> The first one can be thought of as twisting the strand about an axis.
+        </p>
+
+        <section style="text-align: center; width: auto;">
+            <img style="width: min(100% , 730px);" src="./knot_diagrams/rm1.jpg">
+        </section>
+
+        <p>
+            <b>(2)</b> In this one, think one of the two strands being ontop the other and you pull both apart.
+        </p>
+
+        <section style="text-align: center; width: auto;">
+            <img style="width: min(100% , 730px);" src="./knot_diagrams/rm2.jpg">
+        </section>
+
+        <p>
+            <b>(3)</b> Finally, here two strands crossing, and the third horizontal one is in this case below both strands.
+        </p>
+
+        <section style="text-align: center; width: auto;">
+            <img style="width: min(100% , 730px);" src="./knot_diagrams/rm3.jpg">
+        </section>
+
+    </section>
+
+    <section>
+        <p>
+            Thats cool and all but what are we going to do with this? With these knot bending rules established we can now 
+            try to show what knots are quivalent under these relations, with the aim of reducing each knot to its simlpest form, a prime knot.
+            For the non mathematically minded here, I use the word 'prime' to encourage thinking of these knots as the most fundamental form of
+            knot, or like building blocks of knots, just like we have prime numbers and each number 
+            having a <a href="https://en.wikipedia.org/wiki/Integer_factorization" target="_blank">prime number decompostition</a>.
+        </p>
+
+        <p>
+            Here I'll show an example of, what we can call, unkotting a knot using the reidermeister moves. Here I use the first knot we seen on this page
+            which was drawn arbitrarily and happens to be an unknot!
+        </p>
+
+        <section style="text-align: center; width: auto;">
+            <img style="width: min(100% , 100%);" src="./knot_diagrams/badknot_to_unknot.jpg">
+        </section>
+
+    </section>
+    
+    <!--<section>
+        <h3>Knot operations/ Knot math?</h3>
+        - doubling to twist
+        - twisting and writing sum thing? (look that up)
+        - alexander conway polynomials
+        <h3>Kind of equivalence</h3>
+    </section>
+    -->
+        
+    <footer>
+            ??/??/2023<br>
+        Created by Patryk Drozd <br>
+    </footer>
+
+
+	</body>
+
+</html>

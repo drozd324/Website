@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Newton invented gravity</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="\main.css" />
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+	</head>
+    
+	<body>
+        
+        <ul class="main">
+            <li class = "main"><a href="\index.html" class="active"><b>Home</b> </a></li>
+            <li><a href="./coding.html"><b>Back</b></a></li>
+        </ul>
+        
+        <section>
+            <h2>
+                Gravity 05/02/2023
+            </h2>
+            <p>
+                Inspired by the unsolvable 3 body problem, I wanted to make a nice visual representation of particles 
+                affected by a gravity. This one took me way too long to make, one of the problems was a silly minus sign
+                that made everything move away from everything else and the rest goes to incompetence.
+                The following shows how to make stuff in the program and which keys do things.
+                <ul>
+                    <li>
+                        Spacebar -> create 5 random particles 
+                    </li>
+                    <li>
+                        G -> fill the screen with particles
+                    </li>
+                    <li>
+                        S -> creates a 'sun' (particle with fixed postion and large mass) at mouse postition
+                    </li>
+                    <li>
+                        X -> reset the program
+                    </li>
+                    <li>
+                        Click and Drag mouse -> creates a particle in position of mouse click, then gives the 
+                        particle initial velocity proprotional to lenght dragged in direction of dragging
+                    </li>
+                    <li>
+                        L -> toggle lines/trail
+                    </li>
+                    <li>
+                        M -> toggle particles merging
+                    </li>
+                </ul>
+                
+            </p>
+            <p>
+                <img src="./coding_images/orbits1.png" class="pictures">
+                <img src="./coding_images/orbits3.png" class="pictures">
+            </p>
+            <p>
+                11/03/2023
+            </p>
+            <p>
+                So I made a little update, I was curious lately about what would happen if I changed the equation
+                which determines the force between the two particles and I managed to stumble upon some which have some
+                interesting effects. Now if you press the keys 1, 2, 3 or 4, the force the particles will feel will be changed
+                as the program is running. The following are the differnt equations for force which i found interesting 
+                Each F sub i corresponds to the key pressed.
+                $$ { F_1 =\frac{G m_1 m_2}{d^2} } $$
+                $$ { F_2 =\frac{G m_1 m_2}{d} } $$
+                $$ { F_3 = G m_1 m_2 d } $$
+                $$ { F_4 = G m_1 m_2 sin(d) } $$
+                
+                <a href="https://github.com/drozd324/Pygame-orbits" target="_blank">Code on github</a>
+            </p>
+
+            <p>
+                Stuff to download
+                <ul>
+                    <li>
+                        <a href="./program_executables/orbits1.2.exe" download>Orbits1.2</a>
+                    </li>    
+                    
+                </ul>
+                
+            <video controls>
+                <source src="./videos/orbits1.2_vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            </p>
+        </section>
+
+    <footer>
+        23/04/2023<br>
+        Created by Patryk Drozd <br>
+    </footer>
+
+
+	</body>
+
+</html>

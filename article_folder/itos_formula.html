@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>gamble gamble</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="\main.css" />
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              },
+              svg: {
+                fontCache: 'global'
+              }
+            };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
+	</head>
+    
+	<body>
+        
+        <ul class="main">
+            <li class = "main"><a href="\index.html" class="active"><b>Home</b> </a></li>
+            <li><a href="./articles.html"><b>Back</b></a></li>
+        </ul>
+
+    <section>
+        During my last exam session in Maynooth I found myself not wanting to study for my exams. Naturally, the thing to do here is to go down some 
+        completely unrelated rabbit holes, which serve no purpose for my exams. One of these rabbit holes was a discovery, to me, of the subject of
+        stochastic calculus. A strange but familiar looking cousin to the calculus we all know, but with its own quirks and very much different 
+        motivations. These motivations, as opposed to the ones of the classical calculus which grew from the need to describe physical systems, grew
+        to describe what has now become a pillar of the field of finiancial mathematics. In essence, it helps to describe stock market prices.
+
+        I will ty here to draw a parallel bewteen two theorems, one of calculus and one of this stochastic calculus. First I'll state the two theorms.
+
+        <h4><u><b>Theorem (Ito's Formula simpest case)</b></u></h4>
+        If $B_t$ is the standard brownian motion and $ f:\mathbb{R} \to \mathbb{R} $ has a continious second derivative then
+
+        $$ f(B_t) = f(0) + \int_0^t f'(B_s) dB_s + \frac{1}{2} \int_0^t f''(B_s) ds  \hspace{4cm} (1)$$
+
+        And if we rearange a little bit we get
+        
+        $$ \int_0^t f'(B_s) dB_s + \frac{1}{2} \int_0^t f''(B_s) ds = f(B_t) - f(0)  \hspace{4cm} (2)$$
+        
+        <h4><u><b>Theorem (Fundamental Theorem of calculus second part)</b></u></h4>
+        Let $f:[a,b] \to \mathbb{R}$. If $f$ is Riemann integrable on $[a,b]$ then
+
+        $$ \int_a^b f'(x) dx = f(b) - f(a) \hspace{4cm} (3)$$
+        
+        And to try to match the notation in the previous theorem by a substitution or two we get
+
+        $$ \int_0^t f'(x) dx = f(t) - f(0) \hspace{4cm} (4)$$
+        
+        Now the key comparison is to make is bewteen (2) and (4). We can note that in both equations we share an
+        integral whose integrand is a derivative of our function and a difference of our function $f$ evaluated at $t$ and $0$,
+        but in (2) there is an extra integral term. I think this is a kinda unexpected, wierd result but it is a sort of alternative 
+        calculus to what most of us know which I think makes this really interesting. 
+
+    </section>
+
+
+    <footer>
+        25/09/2024
+    </footer>
+
+
+	</body>
+
+</html>

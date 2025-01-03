@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Weather IS predictable</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="\main.css" />
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+	</head>
+    
+	<body>
+        
+        <ul class="main">
+            <li class = "main"><a href="\index.html" class="active"><b>Home</b> </a></li>
+            <li><a href="./coding.html"><b>Back</b></a></li>
+        </ul>
+        
+        <section>
+            <h2>
+                El Niño
+            </h2>
+            <p>
+                This project was made in collaboration with <a href="https://www.youtube.com/watch?v=xDeQVaoTvJM" target="_blank">Adriana Voloshyna</a>. <!-- https://en.m.wikipedia.org/wiki/Breast -->
+            </p>
+            <p>
+                The <a href="https://en.wikipedia.org/wiki/El_Ni%C3%B1o" target="_blank">El Niño southern oscillation</a> is a weather phenomenon occuring 
+                in the pacific ocean which results in unpredictable tempatures, specifically around the east coasts of the Americas and 
+                west of Asia, but also has significant effects around the globe. Very quickly, what happens is that due to changes in 
+                ocean current velocity and changing temperatures the ocean current changes direction which also results in changing 
+                the expected temperatures for us on land. If you would like to know more click 
+                <a href="https://www.youtube.com/watch?v=XOi2jFIhZhA" target="_blank">here</a>. A detailed version of our findings is in 
+                the following link <a href="https://github.com/drozd324/El-Nino/blob/main/ElNino.pdf" target="_blank">ElNino.pdf</a>.
+                Also all the code that made this project on <a href="https://github.com/drozd324/El-Nino" target="_blank">github</a>
+            </p>
+            <p>
+                The following are the symplified equations describing this phenomenon where u, T_e and T_w are the only
+                properties changing in time t and the rest are constants. You may notice this system is vaguely reminiscent of 
+                the <a href ="https://en.wikipedia.org/wiki/Lorenz_system" target="_blank">Lorenz equations</a> which they do behave similarly to.
+                
+                $$\frac{du}{dt} = \frac{B}{\Delta x} (T_e - T_w) - C(u - u^*)$$
+                $$\frac{dT_e}{dt} = - \frac{uT_w}{2 \Delta x} - A(T_w - T^*)$$
+                $$\frac{dT_w}{dt} = - \frac{uT_e}{2 \Delta x} - A(T_e - T^*)$$
+
+                The following image was definitely not just ripped out of wikipedia so the this page looks a bit nicer.
+                There are lots of nice and fun to look at graphs to look at in this pdf
+                <a href="https://github.com/drozd324/El-Nino/blob/main/ElNino.pdf" target="_blank">ElNino.pdf</a> also mentioned earlier from which 
+                i couldn't be bothered to put up here again.
+            </p>
+            <p>
+                <img style = "background-color: white; height: 300px; width: auto;" class="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/ENSO_-_normal.svg/1024px-ENSO_-_normal.svg.png">
+            </p>
+            </section>
+
+    <footer>
+        24/05/2023<br>
+        Created by Patryk Drozd <br>
+    </footer>
+
+
+	</body>
+
+</html>
