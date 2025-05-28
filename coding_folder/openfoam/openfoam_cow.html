@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Cow go fast</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="\main.css" />
+	</head>
+    
+	<body>
+        
+        <ul class="main">
+            <li class = "main"><a href="\index.html" class="active"><b>Home</b> </a></li>
+            <li><a href="../coding.html"><b>Back</b></a></li>
+        </ul>
+        
+		<section>
+			<p>
+				Over the summer of 2024 I had a fun time being an intern at 
+				<a href="https://www.iwes.fraunhofer.de/en.html">Fraunhofer IWES</a>
+				in Oldenburg Germany and during that time I learned about the the CFD
+				sofware of <a href="https://openfoam.org/">OpenFOAM</a>. While trying to
+				learn it ins and outs and how to use it, I figured the only option 
+				learning it would be to simualte the some fluid flow over a cow, and 
+				then make some pictures out of it. So I decided to use the motorbike 
+				example as a starting point and	finagled the files around till I got 
+				out this <i>magificent</i> image.
+			</p>
+		</section>
+	
+        <section>
+            <p>
+			<a href="https://www.youtube.com/watch?v=rkR6b-zz-Rs">
+					<img style = "background-color: white; height: 400px; width: auto;" 
+					class="center" 
+					src="./aerodynamik_cow.png"
+					>
+				</a>
+            </p>
+       </section>
+
+	   <section>
+			<p>
+			Some details about this	simulation:
+			<ul>
+				<li> <a href="https://www.openfoam.com/documentation/guides/latest/doc/guide-turbulence.html">RAS kOmegaSST</a>
+					model which models some of turbulelnce involved and spits out an everage of
+					the quantities. After reaing a bit more this requires some care in the
+					meshing of the model which I definitely didnt properly take care of. 
+				</li>
+				<li>
+					Model ripped out from somewhere on thingiverse (cant find the original link).
+					Processed it a bit with <a href="https://www.blender.org/">Blender</a>
+					to make it <i>smooth</i> and <i>closed</i>. Then processed it with the 
+					OpenFOAM tool snappyHexMesh.
+				</li>
+				<li>
+					Visualisation with Paraview
+				</li>
+			</ul>
+
+			</p>
+		</section>
+
+	
+
+    <footer>
+        28/05/2025<br>
+    </footer>
+
+
+	</body>
+
+</html>
