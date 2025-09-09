@@ -2,11 +2,10 @@
 
 <html>
     <head>
-        <title>code goes whoooopo</title>
+        <title>bloag</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="\main.css" />
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
 	</head>
     
 	<body>
@@ -16,23 +15,52 @@
         </ul>
         
         <section>
-            Blog page for blog entries. Not sure what this is gonna end up as but lets try to have each page be a highlight of a thing 
-            I found or did that I thought was of interest at some point.
+            Blog page for blog entries. Not sure what this is gonna end up as but lets try to
+			have each page be a highlight of a thing I found or did that I thought was of
+			interest at some point. Below you see a very laziy inserted html page from what 
+			should be the latest blog post.
         </section>
-        
+
+		<script>
+		  document.addEventListener("DOMContentLoaded", function() {
+			const iframe = document.getElementById("myIframe");
+
+			iframe.onload = function() {
+				//iframe.contentWindow.scrollTo(0, 60); // Scroll 20 pixels down
+
+				const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+				// Find elements with class 'main' inside the iframe
+				const elementsToHide = iframeDoc.querySelectorAll('.main');
+
+				// Iterate and hide/remove them
+				elementsToHide.forEach(element => {
+				element.style.display = 'none'; // Option 1: Hide them
+				});
+			};
+		  });
+		</script>
+			
+        <section>
+			<iframe id="myIframe" src="./ergokeyboard/ergokeyboard.html" 
+				width="100%" height="600px">
+			</iframe>
+        </section>
+
         <section>
             <ul class="sub">
                 <li>
-                    <a href="">Try Dwarf Fortress - Solid Game</a>
+                    <a href="./ergokeyboard/ergokeyboard.html">Very uselful ergo keyboard</a>
+                </li>
+                <li>
+                    <a href="./flameFractals/flameFractals.html">Flame Fractals</a>
                 </li>
             </ul>
-
         </section>
 
-
     <footer>
-        //2023
-        Created by Patryk Drozd <br>
+        69/420/2025
+        Patryk Drozd <br>
     </footer>
 
 

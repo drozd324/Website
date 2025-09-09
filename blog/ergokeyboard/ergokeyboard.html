@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>key---board</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="\main.css" />
+	</head>
+	<body>
+        
+        <ul class="main">
+            <li class = "main"><a href="\index.html" class="active"><b>Home</b> </a></li>
+        </ul>
+
+		<h2>"Ergo Keyboards"</h2>
+
+		<section style="text-align: center;">
+				<img style="width: 80%;" src="./setup.jpg">
+		</section>
+        
+        <section>
+			<p>
+			Some time a month or two ago, I was grinding out homework assignments, programming
+			for most of the day for a good week. During this time I was slowly starting to feel 
+			my hands and wrist more and more from the constant use of my laptop keyboard, and to 
+			be honest I kinda started worrying a bit about the health of my hands. Having heard 
+			about the infamous "karpel tunnel" from gaming tooo hard and arriving at the conclusion
+			that I will more than likely be programming for the rest of my life, it might be a 
+			good idea to think about using more ergonomic peripherals, more specifilcally keyboards.
+			</p>
+			
+			<p>
+			Already knowing that a small community around ergonomic keyboards exists I stumbled 
+			upon a few fun youtube videos creating their own keyboards from scratch and my smooth
+			brain figured I could also do that. I include two down below.
+			</p>
+
+        </section>
+
+		<section style="text-align: center;">
+			<!-- Vallack -->
+			<a href="https://youtu.be/7UXsD7nSfDY?si=lV56Pa3ONYlEkcrO"></a>
+			<iframe width="80%" height="200px"
+				src="https://www.youtube.com/embed/JqpBKuEVinw?si=ekPEiWzQR3Xi_yLy" 
+				title="YouTube video player" 
+				frameborder="0" 
+				allow="accelerometer; autoplay; 
+						clipboard-write; encrypted-media;
+						gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin" 
+				allowfullscreen>
+			</iframe>
+
+			<!-- FULL custom -->
+			<a href="https://youtu.be/JqpBKuEVinw?si=ekPEiWzQR3Xi_yLy"></a>
+			<iframe width="80%"  height="200px"
+				src="https://www.youtube.com/embed/7UXsD7nSfDY?si=QVXQr7U-Q32wzxkT" 
+				title="YouTube video player" 
+				frameborder="0" 
+				allow="accelerometer; autoplay; 
+					clipboard-write; encrypted-media; 
+					gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin" 
+				allowfullscreen>
+			</iframe>
+		</section>
+		
+		<section>
+			<p>
+			Somewhere along my <em>"research"</em> I conclude that a 34 key keyboard would be the best option.
+			Now I clearly am not thinking about good ergonomics anymore but somehow I convinced myself that 
+			making this funny keyboard is fun. Taking Ben Vallacks video as a main inspiration I rip out 
+			the the files I want from this <a href="https://github.com/davidphilipbarr/Sweep">git repo</a>.
+			and modify them a bit with this pcb making software called
+			<a href="https://www.kicad.org/">KiCad</a>. I trimed around the egdes of the pcb so that it looks
+			like there is not exra matrial sticking outside and made it look nice and compact. My iterations
+			on the Sweep below. And a <a href="https://github.com/drozd324/Sweep">fork</a> I made to share these designs.
+			
+			</p> 
+		
+			<section style="text-align: center; width: auto;">
+				<img style="width: 60%;" 
+					src="https://raw.githubusercontent.com/drozd324/Sweep/refs/heads/main/board_red.png">
+				<img style="width: 60%;" 
+					src="https://raw.githubusercontent.com/drozd324/Sweep/refs/heads/main/board_render.png">
+			</section>
+
+			<p> 
+			After fighting with this software I got a nice enough model out and ordered it along with the other
+			parts I need in order to create my keyboard. I pick out some red Khali v1 switches because I dont
+			like to be obnoxiiously loud and blank white keycaps cuz im cool like that. 
+			</p> 
+
+			<p> 
+			So thats cool and all but when you have all of the components and and you succesfully put them 
+			together after a bit of soldering and assembly, you get to now install the software of your
+			choice on your keyboard, im my case <a href="https://qmk.fm/">QMK</a> which lets my convenienlty
+			oriented buttons to act like a keyboard. One aspect of this step is choosing a key layout because 
+			this is insanely custom already, but as usualy there is allways a
+			<a href="https://github.com/qmk/qmk_firmware/blob/user-keymaps-still-present/keyboards/ferris/keymaps/default/readme.md">default layout</a> which I opted for, for now. To give you an idea of how this layout 
+			works, just like your keyboard on your phone has layers for typing letters, numbers and special 
+			characters, the authors of this layout use this concept to give this physical keyboard multiple 
+			layers for all of the keys that it is missing.
+			</p> 
+			
+			<p> 
+			And thats it for the most part, apart from the time spent "debugging" or fixing your skill gap
+			while using the various software and failing I preset a final septup of sorts. I think it looks
+			pretty neat.
+			</p> 
+
+			<section style="text-align: center;">
+					<img style="width: 80%;" src="./keyboard.jpg">
+			</section>
+		
+		</section>
+
+
+    <footer>
+        14/7/2025
+        Patryk Drozd <br>
+    </footer>
+
+
+	</body>
+
+</html>
